@@ -1,0 +1,45 @@
+.import-file {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    padding: 15px;
+    transition: height 0.5s ease-in-out;
+}
+
+.import-file:hover {
+    background: rgba(248, 248, 248, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.import-file__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.import-file__img {}
+
+.import-file__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #F4F4F4;
+
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.hide .import-file__description {
+    opacity: 0;
+    visibility: hidden;
+}
