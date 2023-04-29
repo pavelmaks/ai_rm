@@ -5,15 +5,14 @@ import PropTypes from 'prop-types'
 import './nav-bar.css'
 
 const NavBar = props => {
-    console.log(props)
     return (
-        <header class="header">
-            <div class="container">
-                <div class="header__logo logo">
+        <header className="header">
+            <div className="container">
+                <div className="header__logo logo">
                     AI Road Marking
                 </div>
-                <ul class="header__menu menu">
-                    <li class="menu__item">
+                <ul className="header__menu menu">
+                    <li className="menu__item">
                         <NavLink 
                             to="/" 
                             className={({ isActive }) =>
@@ -22,7 +21,7 @@ const NavBar = props => {
                             Распознавание
                         </NavLink>
                     </li>
-                    <li class="menu__item">
+                    <li className="menu__item">
                         <NavLink 
                             to="/calibrate" 
                             className={({ isActive }) =>

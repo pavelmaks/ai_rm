@@ -9,7 +9,7 @@ import Calibrate from './pages/Calibrate/Calibrate'
 function App() {
   return (
     <div className="App">
-      <div class="page">
+      <div className="page">
         <NavBar/>
         <Routes>
           <Route path="/" element={<DropFileInput/>} />
