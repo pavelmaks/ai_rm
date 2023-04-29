@@ -1,0 +1,31 @@
+.crop-template-form {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.crop-template-label {
+    display: block;
+    cursor: pointer;
+    width: 90px;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.crop-template-input:checked + .crop-template-label  {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.calibrate__btn {
+    background-color: greenyellow;
+    display: block;
+    cursor: pointer;
+    max-width: 200px;
+    padding: 10px;
+    border: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    font-size: 20px;
+}
