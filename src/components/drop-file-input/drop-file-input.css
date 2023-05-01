@@ -42,3 +42,7 @@
     border: 3px dashed #FFFFFF;
     border-radius: 20px;
 }
+
+.drop-file-input__uploaded-file {
+    margin: 0;
+}

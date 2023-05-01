@@ -1,0 +1,86 @@
+.menu-file__item {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    background: rgba(248, 248, 248, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 3px 1px rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+    scale: 1;
+    z-index: 10;
+}
+
+.menu-file__info-file {}
+
+.info-file {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.info-file__type {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.info-file__features {
+    margin-left: 20px;
+}
+
+.info-file__features p {
+    margin: 0;
+}
+
+.menu-file__delete-file {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    transition: visibility 0.3s ease-in, opacity 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.menu-file__item.zoom .menu-file__delete-file {
+    display: none;
+}
+
+.menu-file__item:not(.zoom):hover .menu-file__delete-file {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-file__delete-file:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.menu-file__delete-file:active {
+    box-shadow: inset 0px 5px 10px 5px rgba(0, 0, 0, 0.15);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.menu-file__item.zoom .info-file__features {
+    display: none;
+}
+
+.delete-file {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+}
